@@ -33,9 +33,10 @@ $(document).ready(function () {
     //CREO 2 CONTATORI X STABILIRE IL NUMERI DI NUMERI INDOVINATI O SBAGLIATI
     var count = 0;
     var incr = 0;
-    //CREO CONDIZIONE PER STABILIRE VITTORIA /SCONFITTA
+
+    //CREO CONDIZIONE PER STABILIRE QUALI E QUANTI NUMERI HO INDOVINATO
     for (var i = 0; i < arrayNumeriRandom.length; i++) {
-      var y = 0;
+
       var indovina = parseInt( prompt("inserisci i numeri che ti ricordi") );
 
       if (arrayNumeriRandom.includes(indovina)) {
@@ -48,6 +49,6 @@ $(document).ready(function () {
     }
 
     console.log("HAI INSERITO " + count + " NUMERI GIUSTI: " + numeriGiusti);
-    console.log("HAI SBAGLIATO " + incr + " numeri: " + numeriSbagliati);
+    console.log("HAI SBAGLIATO " + incr + " NUMERI: " + numeriSbagliati);
   }
 });
